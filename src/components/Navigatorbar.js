@@ -25,6 +25,7 @@ function Navigatorbar() {
       </div>
       <div>
       <Routes>
+        <Route path='/yu-gi-oh/:id' element={<Digimon/>}></Route>
         <Route path='/yu-gi-oh' element={<Yugioh/>}></Route>
         <Route path='/digimon' element={<Digimon/>}></Route>
         <Route exact path='/' element={<Home/>}></Route>
