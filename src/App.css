@@ -3,10 +3,79 @@
   text-align: center;
 }
 
+
+.pvw { color: #111; font-family: 'Open Sans', sans-serif; font-size: 2vw; margin: 0 0 72px; text-align: center; }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.nav-link{
+  display: flex !important;
+}
+
+.dropdown-toggle::after{
+  display: flex !important;
+  text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+@media screen and (min-width: 601px) {
+
+  .title_heading { color: #111;
+    font-family: 'Helvetica Neue',
+    sans-serif; font-size: 150px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; margin-top: 20px; }
+
+    .h2title_heading { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 30px; text-align: center;  display: flex;
+      justify-content: center;
+      align-items: center;}
+
+    .table_heading {font-size: 20px;}
+    .table_content {font-size: 20px;}
+    .nav_heading {font-size: 20px; color: white !important; text-align: center;  display: flex;
+      justify-content: center;
+      align-items: center;}
+    .nav_title {font-size: 25px; font-weight: bold; color: white !important;}
+
+    .button_align_center{text-align: center;  display: flex;
+      justify-content: center;
+      align-items: center; }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: white !important
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  .title_heading { color: #111;
+    font-family: 'Helvetica Neue',
+    sans-serif; font-size: 50px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; margin-top: 20px;}
+
+    .h2title_heading { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 10px;  text-align: center;  display: flex !important;
+      justify-content: center;
+      align-items: center; }
+
+    .table_heading {font-size: 8px;}
+    .table_content {font-size: 8px;}
+
+    .nav_heading {font-size: 10px; color: white !important; text-align: center;  display: flex;
+      justify-content: center;
+      align-items: center;}
+    .nav_title {font-size: 15px; font-weight: bold; color: white !important;}
+
+  
+    .button_align_center{text-align: center;  display: flex;
+      justify-content: center;
+      align-items: center; }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: white !important
+    }
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

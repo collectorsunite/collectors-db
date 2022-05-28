@@ -1,15 +1,14 @@
 import Button from "@restart/ui/esm/Button";
 import { useState } from "react";
-import { Modal, ListGroup, Table } from "react-bootstrap";
+import { Modal, Table } from "react-bootstrap";
 import NumberFormat from "react-number-format";
+import MultipleImages from "./multipleImages";
 
 function InfoModal(props) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const cardItem = props.card
-    const imageUrl = cardItem.card_images.map((images) => images.image_url)
-    const setDetails = cardItem.card_sets.map((sets) => sets)
 
     const mystyle = {
       display: "flex",
@@ -19,16 +18,16 @@ function InfoModal(props) {
     return (
       <>
         <Button className="nextButton" onClick={handleShow}>
-          More Details
+          Card..
         </Button>
   
-        <Modal size="lg" show={show} onHide={handleClose} centered>
+        <Modal size="lg" show={show} onHide={handleClose} centered fluid>
           <Modal.Header closeButton>
             <Modal.Title>{cardItem.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div style={mystyle} >
-              <img src={imageUrl} alt="cardImage"/>
+              {MultipleImages({imageData: cardItem.card_images})}
             </div>
             <div>
               <h3>Card Details</h3>
@@ -38,11 +37,11 @@ function InfoModal(props) {
                 </tr>
                 </thead>
                 <tbody>                                
-                            <tr key={cardItem.id}>
+                            <tr key={cardItem.id + 1}>
                                 <td>Description</td>
                                 <td>{cardItem.desc}</td>                                
                             </tr>   
-                            <tr key={cardItem.id}>
+                            <tr key={cardItem.id +2 }>
                                 <td>Race</td>
                                 <td>{cardItem.race}</td>                                
                             </tr> 
@@ -78,23 +77,23 @@ function InfoModal(props) {
                                 <tr>                                 
                                 </tr>
                                 </thead>
-              {cardItem.card_sets.map((cardSetItem) => (                                                              
+              {cardItem.card_sets?.map((cardSetItem) => (                                                              
                                 <tbody>                                
                                             <tr key={cardItem.id}>
                                                 <td>Set Name</td>
-                                                <td>{cardSetItem.set_name}</td>                                
+                                                <td>{cardSetItem.set_name || "-"}</td>                                
                                             </tr>   
                                             <tr key={cardItem.id}>
                                                 <td>Set Code</td>
-                                                <td>{cardSetItem.set_code}</td>                                
+                                                <td>{cardSetItem.set_code || "-"}</td>                                
                                             </tr> 
                                             <tr key={cardItem.id}>
                                                 <td>Set Rarity</td>
-                                                <td>{cardSetItem.set_rarity}</td>                                
+                                                <td>{cardSetItem.set_rarity || "-"}</td>                                
                                             </tr> 
                                             <tr key={cardItem.id}>
                                                 <td>Set Rarity Code</td>
-                                                <td>{cardSetItem.set_rarity_code}</td>                                
+                                                <td>{cardSetItem.set_rarity_code || "-"}</td>                                
                                             </tr>                                                                                                                                
                                 </tbody>                                                      
               ))}
