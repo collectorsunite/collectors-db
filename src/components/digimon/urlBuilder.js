@@ -3,7 +3,7 @@ function UrlBuilder(props) {
 
     const data = props.linkData
 
-    var startUrl = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
+    var startUrl = "https://digimoncard.io/api-public/search.php"
     var stringArray = []
     
     Object.entries(data).map(([key,value])=> { 
@@ -12,27 +12,33 @@ function UrlBuilder(props) {
                 if(value === "") {
                     return ""
                 } else {
-                    return stringArray.push(`fname=${value}`)
+                    return stringArray.push(`n=${value}`)
                 }
             case 'type':
-                if(value === "") {
+                if(value === "Select Card Type") {
                     return ""
                 } else {
                     return stringArray.push(`type=${value}`)
                 }
 
-            case 'race':
-                if(value === "") {
+            case 'color':
+                if(value === "Select Card Color") {
                     return ""
                 } else {
-                    return stringArray.push(`race=${value}`)
+                    return stringArray.push(`color=${value}`)
                 }
 
             case 'set':
                     if(value === "Select Card Set") {
                         return ""
                     } else {
-                        return stringArray.push(`cardset=${value}`)
+                        return stringArray.push(`pack=${value}`)
+                    }
+            case 'attribute':
+                    if(value === "") {
+                        return ""
+                    } else {
+                        return stringArray.push(`attribute=${value}`)
                     }
             default:
               return ""
@@ -49,7 +55,7 @@ function UrlBuilder(props) {
     }
     
 
-        return startUrl
+        return startUrl + "& sort=name&series=Digimon Card Game"
 }
 
 export default UrlBuilder
