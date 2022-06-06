@@ -3,7 +3,6 @@ import { Form, Row, Col, Button } from 'react-bootstrap'
 import CardRender from './CardContainer';
 import axios from 'axios';
 import UrlBuilder from './urlBuilder';
-import digiJson from './constants/digimonJsonExample';
 import digimonColor from  './constants/digimonColors';
 import digimonTypes from './constants/digimonTypes'
 import digimonSets from './constants/digimonSets'

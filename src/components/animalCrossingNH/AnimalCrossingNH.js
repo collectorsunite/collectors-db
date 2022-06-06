@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-import PokemonPage from "./PokemonPage"
+import AnimalNHPage from "./AnimalPage"
 
-export default class Pokemon extends Component {
+export default class AnimalCrossingNH extends Component {
   render() {
     return (   
         <div>
@@ -13,9 +13,9 @@ export default class Pokemon extends Component {
         {/* <Image src="/pngwing.com.png" alt="yugi" fluid/> */}
         </Col>        
         <Col xs={7}> 
-        <h1 className="title_heading_magic">Pokemon</h1>
-        <small className="h2title_heading">“Pikachu, I Choose You!”</small>
-        <PokemonPage />
+        <h1 className="title_heading_magic">Animal Crossing: New Horizons</h1>
+        <small className="h2title_heading">“You never get a second chance to make a first impression.”</small>
+        <AnimalNHPage />
         </Col>
         <Col>3</Col>
         </Row>

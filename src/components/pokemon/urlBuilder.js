@@ -3,8 +3,6 @@ function UrlBuilder(props) {
 
     const data = props.linkData
 
-    // https://api.pokemontcg.io/v2/cards?q=
-
     var startUrl = "https://api.pokemontcg.io/v2/cards?q="
     var stringArray = []
     

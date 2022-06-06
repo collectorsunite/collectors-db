@@ -1,21 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-import PokemonPage from "./PokemonPage"
+import MagicPage from "./MagicPage"
 
-export default class Pokemon extends Component {
+export default class MagicTheGatering extends Component {
   render() {
     return (   
         <div>
         <Container fluid>
         <Row className="g-4">      
         <Col>
-        {/* <Image src="/pngwing.com.png" alt="yugi" fluid/> */}
         </Col>        
         <Col xs={7}> 
-        <h1 className="title_heading_magic">Pokemon</h1>
-        <small className="h2title_heading">“Pikachu, I Choose You!”</small>
-        <PokemonPage />
+        <h1 className="title_heading_magic">Magic: The Gathering</h1>
+        <small className="h2title_heading">“Sorry I burned down your village. ...”</small>
+        <MagicPage />
         </Col>
         <Col>3</Col>
         </Row>
