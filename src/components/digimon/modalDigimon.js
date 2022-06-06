@@ -1,8 +1,6 @@
 import Button from "@restart/ui/esm/Button";
 import { useState } from "react";
 import { Modal, Table, Image } from "react-bootstrap";
-import NumberFormat from "react-number-format";
-import MultipleImages from "./multipleImages";
 
 function InfoModal(props) {
     const [show, setShow] = useState(false);

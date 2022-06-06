@@ -6,6 +6,9 @@ import Yugioh from './yugioh/Yugioh';
 import Digimon from './digimon/Digimon';
 import Home from './Home';
 import Pokemon from './pokemon/Pokemon';
+import MagicTheGatering from './magicTheGathering/MagicTheGathering';
+import AnimalCrossingNH from './animalCrossingNH/AnimalCrossingNH';
+import AnimalNav from './animalCrossingNH/animalNavigator';
 
 
 function Navigatorbar() {
@@ -21,6 +24,8 @@ function Navigatorbar() {
           <NavDropdown.Item Link as={Link} to={"/yu-gi-oh"}>Yu-Gi-Oh</NavDropdown.Item>
           <NavDropdown.Item Link as={Link} to={"/digimon"}>Digimon</NavDropdown.Item>
           <NavDropdown.Item Link as={Link} to={"/pokemon"}>Pokemon</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/magic-the-gathering"}>Magic The Gathering</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/animal-crossing-new-horizon"}>Animal Crossing: NH</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link className="nav_heading" Link as={Link} to={"/"}>Contact us</Nav.Link>
         <Nav.Link className="nav_heading" Link as={Link} to={"/"}>About us</Nav.Link>
@@ -34,6 +39,10 @@ function Navigatorbar() {
         <Route path='/pokemon' element={<Pokemon/>}></Route>
         <Route path='/yu-gi-oh' element={<Yugioh/>}></Route>
         <Route path='/digimon' element={<Digimon/>}></Route>
+        <Route path='/magic-the-gathering' element={<MagicTheGatering/>}></Route>
+        <Route path='/animal-crossing-new-horizon' element={<AnimalCrossingNH/>}></Route>
+        <Route path='/animal-crossing-new-horizon/:id' element={<AnimalNav/>}></Route>
+
         <Route exact path='/' element={<Home/>}></Route>
       </Routes>
     
