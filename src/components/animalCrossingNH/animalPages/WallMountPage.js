@@ -1,4 +1,5 @@
-import React, { Component, state } from 'react'
+import React, { Component } from 'react'
+import state from 'react'
 import { Row, Col, Container, Table } from 'react-bootstrap'
 import axios from 'axios';
 import WallmountModal from '../animalModals/modalWallmount';
