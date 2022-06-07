@@ -149,6 +149,7 @@ class MagicPage extends Component {
         </Button>
       </Form>
       <p>{CardRender(this.state.data)}</p>
+      <p style={{marginBottom: "100px"}}></p>
       </div>
       );
     }

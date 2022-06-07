@@ -1,6 +1,5 @@
-import Button from "@restart/ui/esm/Button";
 import { useState } from "react";
-import { Modal, Table, Image } from "react-bootstrap";
+import { Modal, Table, Image, Button } from "react-bootstrap";
 import NumberFormat from "react-number-format";
 
 function InfoModal(props) {
@@ -44,7 +43,7 @@ function InfoModal(props) {
 
   return (
     <>
-      <Button className="nextButton" onClick={handleShow}>
+      <Button className="nextButton" onClick={handleShow} variant="outline-dark">
         Card..
       </Button>
 
