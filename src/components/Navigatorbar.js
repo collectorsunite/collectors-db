@@ -9,6 +9,9 @@ import Pokemon from './pokemon/Pokemon';
 import MagicTheGatering from './magicTheGathering/MagicTheGathering';
 import AnimalCrossingNH from './animalCrossingNH/AnimalCrossingNH';
 import AnimalNav from './animalCrossingNH/animalNavigator';
+import ContactUs from './ContactUsPage';
+import AboutUs from './AboutUsPage';
+import Donate from './DonatePage';
 
 
 function Navigatorbar() {
@@ -16,7 +19,7 @@ function Navigatorbar() {
     <Router>
     <div>
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" >
         <Container fluid>
         <Nav className="me-auto">
         <Nav.Link className="nav_title" Link as={Link} to={"/"}>Simple DB</Nav.Link>    
@@ -27,9 +30,9 @@ function Navigatorbar() {
           <NavDropdown.Item Link as={Link} to={"/magic-the-gathering"}>Magic The Gathering</NavDropdown.Item>
           <NavDropdown.Item Link as={Link} to={"/animal-crossing-new-horizon"}>Animal Crossing: NH</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link className="nav_heading" Link as={Link} to={"/"}>Contact us</Nav.Link>
-        <Nav.Link className="nav_heading" Link as={Link} to={"/"}>About us</Nav.Link>
-        <Nav.Link className="nav_heading" Link as={Link} to={"/"}>Donate</Nav.Link>
+        <Nav.Link className="nav_heading" Link as={Link} to={"/contact-us"}>Contact us</Nav.Link>
+        <Nav.Link className="nav_heading" Link as={Link} to={"/about-us"}>About us</Nav.Link>
+        <Nav.Link className="nav_heading" Link as={Link} to={"/donate"}>Donate</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -42,6 +45,9 @@ function Navigatorbar() {
         <Route path='/magic-the-gathering' element={<MagicTheGatering/>}></Route>
         <Route path='/animal-crossing-new-horizon' element={<AnimalCrossingNH/>}></Route>
         <Route path='/animal-crossing-new-horizon/:id' element={<AnimalNav/>}></Route>
+        <Route path='/contact-us' element={<ContactUs/>}></Route>
+        <Route path='/about-us' element={<AboutUs/>}></Route>
+        <Route path='/donate' element={<Donate/>}></Route>
 
         <Route exact path='/' element={<Home/>}></Route>
       </Routes>

@@ -4,6 +4,7 @@ import { Button, Card, Container, Row, Col } from "react-bootstrap";
 class AnimalNHPage extends Component {
   render() {
     return (
+      <div>
       <Container>
         <Row>
           <Col>
@@ -157,6 +158,8 @@ class AnimalNHPage extends Component {
           </Col>
         </Row>
       </Container>
+      <p style={{marginBottom: "100px"}}></p>
+      </div>
     );
   }
 }

@@ -82,6 +82,7 @@ export default class FishPage extends Component {
         <Col>3</Col>
         </Row>
         </Container>
+        <p style={{marginBottom: "100px"}}></p>
       </div>
     )
   }
