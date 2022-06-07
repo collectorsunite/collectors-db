@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Container, Row, Col, ListGroup } from "react-bootstrap";
+import { Button, Container, Row, Col, ListGroup } from "react-bootstrap";
 
 export default class Donate extends Component {
   render() {

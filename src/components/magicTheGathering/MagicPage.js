@@ -1,4 +1,5 @@
-import React, { Component, state } from 'react'
+import React, { Component } from 'react'
+import state from 'react'
 import { Form, Row, Col, Button } from 'react-bootstrap'
 import CardRender from './CardContainer';
 import axios from 'axios';
