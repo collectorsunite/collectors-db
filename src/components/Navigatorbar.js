@@ -22,7 +22,7 @@ function Navigatorbar() {
       <Navbar bg="dark" variant="dark" >
         <Container fluid>
         <Nav className="me-auto">
-        <Nav.Link className="nav_title" Link as={Link} to={"/"}>Simple DB</Nav.Link>    
+        <Nav.Link className="nav_title" Link as={Link} to={"/collectors-db"}>Simple DB</Nav.Link>    
         <NavDropdown className="nav_heading" title="Collectors Search" id="basic-nav-dropdown">
           <NavDropdown.Item Link as={Link} to={"/yu-gi-oh"}>Yu-Gi-Oh</NavDropdown.Item>
           <NavDropdown.Item Link as={Link} to={"/digimon"}>Digimon</NavDropdown.Item>
@@ -49,7 +49,7 @@ function Navigatorbar() {
         <Route path='/about-us' element={<AboutUs/>}></Route>
         <Route path='https://collectorsunite.github.io/donate' element={<Donate/>}></Route>
 
-        <Route exact path='/' element={<Home/>}></Route>
+        <Route exact path='/collectors-db' element={<Home/>}></Route>
       </Routes>
     
       </div>
