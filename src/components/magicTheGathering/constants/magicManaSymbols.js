@@ -14,39 +14,41 @@ function magicManaSymbols(manaString) {
   var Threecount = (temp.match(/3/g) || []).length;
 
   var symbolArray = [];
-
+  const publicStart = process.env.PUBLIC_URL
   for (var one = 0; one < Onecount; one++) {
-    symbolArray.push("/magicSymbols/1.png");
+    const test = process.env.PUBLIC_URL
+    symbolArray.push(`${publicStart}/1.png`);
   }
   for (var two = 0; two < Twocount; two++) {
-    symbolArray.push("/magicSymbols/2.png");
+    symbolArray.push(`${publicStart}/2.png`);
   }
   for (var three = 0; three < Threecount; three++) {
-    symbolArray.push("/magicSymbols/3.png");
+    symbolArray.push(`${publicStart}/3.png`);
+  }
     for (var b = 0; b < Bcount; b++) {
-      symbolArray.push("/magicSymbols/B.png");
+      symbolArray.push(`${publicStart}/B.png`);
     }
 
     for (var c = 0; c < Ccount; c++) {
-      symbolArray.push("/magicSymbols/C.png");
+      symbolArray.push(`${publicStart}/C.png`);
     }
     for (var g = 0; g < Gcount; g++) {
-      symbolArray.push("/magicSymbols/G.png");
+      symbolArray.push(`${publicStart}/G.png`);
     }
     for (var r = 0; r < Rcount; r++) {
-      symbolArray.push("/magicSymbols/R.png");
+      symbolArray.push(`${publicStart}/R.png`);
     }
     for (var u = 0; u < Ucount; u++) {
-      symbolArray.push("/magicSymbols/U.png");
+      symbolArray.push(`${publicStart}/U.png`);
     }
 
     for (var w = 0; w < Wcount; w++) {
-      symbolArray.push("/magicSymbols/W.png");
+      symbolArray.push(`${publicStart}/W.png`);
     }
     for (var x = 0; x < Xcount; x++) {
-      symbolArray.push("/magicSymbols/X.png");
+      symbolArray.push(`${publicStart}/X.png`);
     }
-  }
+  
  
   return (
     <>

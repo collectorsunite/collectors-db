@@ -47,7 +47,7 @@ function Navigatorbar() {
         <Route path='/animal-crossing-new-horizon/:id' element={<AnimalNav/>}></Route>
         <Route path='/contact-us' element={<ContactUs/>}></Route>
         <Route path='/about-us' element={<AboutUs/>}></Route>
-        <Route path='/donate' element={<Donate/>}></Route>
+        <Route path='https://collectorsunite.github.io/donate' element={<Donate/>}></Route>
 
         <Route exact path='/' element={<Home/>}></Route>
       </Routes>
