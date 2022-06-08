@@ -24,11 +24,11 @@ function Navigatorbar() {
         <Nav className="me-auto">
         <Nav.Link className="nav_title" Link as={Link} to={"/collectors-db"}>Simple DB</Nav.Link>    
         <NavDropdown className="nav_heading" title="Collectors Search" id="basic-nav-dropdown">
-          <NavDropdown.Item Link as={Link} to={"/yu-gi-oh"}>Yu-Gi-Oh</NavDropdown.Item>
-          <NavDropdown.Item Link as={Link} to={"/digimon"}>Digimon</NavDropdown.Item>
-          <NavDropdown.Item Link as={Link} to={"/pokemon"}>Pokemon</NavDropdown.Item>
-          <NavDropdown.Item Link as={Link} to={"/magic-the-gathering"}>Magic The Gathering</NavDropdown.Item>
-          <NavDropdown.Item Link as={Link} to={"/animal-crossing-new-horizon"}>Animal Crossing: NH</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/collectors-db/yu-gi-oh"}>Yu-Gi-Oh</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/collectors-db/digimon"}>Digimon</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/collectors-db/pokemon"}>Pokemon</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/collectors-db/magic-the-gathering"}>Magic The Gathering</NavDropdown.Item>
+          <NavDropdown.Item Link as={Link} to={"/collectors-db/animal-crossing-new-horizon"}>Animal Crossing: NH</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link className="nav_heading" Link as={Link} to={"/contact-us"}>Contact us</Nav.Link>
         <Nav.Link className="nav_heading" Link as={Link} to={"/about-us"}>About us</Nav.Link>
@@ -39,15 +39,15 @@ function Navigatorbar() {
       </div>
       <div>
       <Routes>
-        <Route path='/pokemon' element={<Pokemon/>}></Route>
-        <Route path='/yu-gi-oh' element={<Yugioh/>}></Route>
-        <Route path='/digimon' element={<Digimon/>}></Route>
-        <Route path='/magic-the-gathering' element={<MagicTheGatering/>}></Route>
-        <Route path='/animal-crossing-new-horizon' element={<AnimalCrossingNH/>}></Route>
-        <Route path='/animal-crossing-new-horizon/:id' element={<AnimalNav/>}></Route>
-        <Route path='/contact-us' element={<ContactUs/>}></Route>
-        <Route path='/about-us' element={<AboutUs/>}></Route>
-        <Route path='https://collectorsunite.github.io/donate' element={<Donate/>}></Route>
+        <Route path='/collectors-db/pokemon' element={<Pokemon/>}></Route>
+        <Route path='/collectors-db/yu-gi-oh' element={<Yugioh/>}></Route>
+        <Route path='/collectors-db/digimon' element={<Digimon/>}></Route>
+        <Route path='/collectors-db/magic-the-gathering' element={<MagicTheGatering/>}></Route>
+        <Route path='/collectors-db/animal-crossing-new-horizon' element={<AnimalCrossingNH/>}></Route>
+        <Route path='/collectors-db/animal-crossing-new-horizon/:id' element={<AnimalNav/>}></Route>
+        <Route path='/collectors-db/contact-us' element={<ContactUs/>}></Route>
+        <Route path='/collectors-db/about-us' element={<AboutUs/>}></Route>
+        <Route path='/collectors-db/donate' element={<Donate/>}></Route>
 
         <Route exact path='/collectors-db' element={<Home/>}></Route>
       </Routes>
