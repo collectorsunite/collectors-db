@@ -16,7 +16,7 @@ export default class Yugioh extends Component {
           <small className="h2title_heading">“Heart of the Cards, guide me! I draw!”</small>
           <YugiohPage />
           </Col>
-          <Col>3</Col>
+          <Col></Col>
           </Row>
           </Container>
         </div>

@@ -7,10 +7,7 @@ export default class Donate extends Component {
       <div>
         <h1 className="title_heading_magic">Donate</h1>
         <h2 className="h2title_heading">What your donations do for me:</h2>
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col>
+        <Container>         
               <ListGroup as="ol" numbered>
                 <ListGroup.Item as="li">
                   Buys me a coffee (with 2 kids this is needed)
@@ -31,13 +28,10 @@ export default class Donate extends Component {
               <Button className="paypal_button"
           variant="warning"
           href={"https://www.paypal.com/donate/?hosted_button_id=7J2VHZ7BMY9CG"}
-          size="lg"
+          
         >
           Donate Here
-        </Button>
-            </Col>
-            <Col></Col>
-          </Row>
+        </Button>            
         </Container>
 
         <h2 className="h2title_heading">
