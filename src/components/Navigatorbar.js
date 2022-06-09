@@ -1,5 +1,5 @@
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'; 
+import { HashRouter as Router, Link, Route, Routes } from 'react-router-dom'; 
 
 import React from 'react'
 import Yugioh from './yugioh/Yugioh';

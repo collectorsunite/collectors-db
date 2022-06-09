@@ -20,7 +20,7 @@ export default class Home extends Component {
                   </Card.Text>
                   <Button
                     variant="outline-dark"
-                    href={"/collectors-db/yu-gi-oh"}
+                    href={"/#/collectors-db/yu-gi-oh"}
                   >
                     Click Here
                   </Button>
@@ -35,7 +35,7 @@ export default class Home extends Component {
                   </Card.Text>
                   <Button
                     variant="outline-dark"
-                    href={"/collectors-db/digimon"}
+                    href={"/#/collectors-db/digimon"}
                   >
                     Click Here
                   </Button>
@@ -55,7 +55,7 @@ export default class Home extends Component {
                   </Card.Text>
                   <Button
                     variant="outline-dark"
-                    href={"/collectors-db/pokemon"}
+                    href={"/#/collectors-db/pokemon"}
                   >
                     Click Here
                   </Button>
@@ -70,7 +70,7 @@ export default class Home extends Component {
                   </Card.Text>
                   <Button
                     variant="outline-dark"
-                    href={"/collectors-db/magic-the-gathering"}
+                    href={"/#/collectors-db/magic-the-gathering"}
                   >
                     Click Here
                   </Button>
@@ -87,7 +87,7 @@ export default class Home extends Component {
                   </Card.Text>
                   <Button
                     variant="outline-dark"
-                    href={"/collectors-db/animal-crossing-new-horizon"}
+                    href={"/#/collectors-db/animal-crossing-new-horizon"}
                   >
                     Click Here
                   </Button>
