@@ -134,7 +134,7 @@ function InfoModal(props) {
                                                   prefix={"£"}/></td>                                
                                             </tr> 
                                             <tr key={cardItem.id}>
-                                                <td>Amazon Price:</td>
+                                                <td><a href="https://amzn.to/3MCcxVC">Amazon Price:</a></td>
                                                 <td>
                                                 <NumberFormat
                                                   value={cardSetItem.amazon_price}

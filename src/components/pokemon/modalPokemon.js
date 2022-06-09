@@ -325,6 +325,10 @@ function InfoModal(props) {
                 <td>Updated at:</td>
                 <td>{item.updatedAt || "-"}</td>
               </tr>
+              <tr key={cardItem.id}>
+                <td>Amazon Link:</td>
+                <td><a href="https://amzn.to/3HazwpN">Check Price?</a></td>
+              </tr>
             </tbody>
             </>
               ))}              

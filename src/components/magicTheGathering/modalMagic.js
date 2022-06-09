@@ -120,9 +120,13 @@ function InfoModal(props) {
                   <td>{cardItem.power || ("-")}</td>
                 </tr>
                 <tr key={cardItem.id + 1}>
+                  <td>Amazon Price:</td>
+                  <td><a href="https://amzn.to/3tqMcmL">Check Price?</a></td>
+                </tr>
+                <tr key={cardItem.id + 1}>
                   <td>Printings</td>
                   <td>{cardItem.printings?.join(", ") || ("-")}</td>
-                </tr>                           
+                </tr>                            
               </tbody>
             </Table>
             <h3>Rulings</h3>
