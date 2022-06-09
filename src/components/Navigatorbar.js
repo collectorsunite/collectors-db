@@ -16,7 +16,7 @@ import Donate from './DonatePage';
 
 function Navigatorbar() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
     <div>
     <div>
       <Navbar bg="dark" variant="dark" >
