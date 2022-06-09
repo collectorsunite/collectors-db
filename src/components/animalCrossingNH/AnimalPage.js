@@ -14,7 +14,7 @@ class AnimalNHPage extends Component {
                 <Card.Text>All the fish in Animal Crossing Horizons</Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/fish"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/fish"}
                 >
                   Go Fishing
                 </Button>
@@ -29,7 +29,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/sea"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/sea"}
                 >
                   Creature Hunters..
                 </Button>
@@ -42,7 +42,7 @@ class AnimalNHPage extends Component {
                 <Card.Text>All the bugs in Animal Crossing Horizons</Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/bugs"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/bugs"}
                 >
                   Its a Bug Life..
                 </Button>
@@ -55,7 +55,7 @@ class AnimalNHPage extends Component {
                 <Card.Text>All the music in Animal Crossing Horizons</Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/music"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/music"}
                 >
                   Go listen..
                 </Button>
@@ -73,7 +73,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/fossils"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/fossils"}
                 >
                   Mr Jones..
                 </Button>
@@ -88,7 +88,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/villagers"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/villagers"}
                 >
                   Village People..
                 </Button>
@@ -101,7 +101,7 @@ class AnimalNHPage extends Component {
                 <Card.Text>All the art in Animal Crossing Horizons</Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/art"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/art"}
                 >
                   Picasoooo..
                 </Button>
@@ -118,7 +118,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/items-houseware"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/items-houseware"}
                 >
                   New sofa?
                 </Button>
@@ -133,7 +133,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/items-wallmounted"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/items-wallmounted"}
                 >
                   Wallmount it..
                 </Button>
@@ -148,7 +148,7 @@ class AnimalNHPage extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-dark"
-                  href={"/#/collectors-db/animal-crossing-new-horizon/items-misc"}
+                  href={"/collectors-db/#/animal-crossing-new-horizon/items-misc"}
                 >
                   What is left?
                 </Button>
