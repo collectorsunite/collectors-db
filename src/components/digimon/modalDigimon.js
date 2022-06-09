@@ -42,7 +42,11 @@ function InfoModal(props) {
                             <tr key={cardItem.id + 1}>
                                 <td>Type</td>
                                 <td>{cardItem.type}</td>                                
-                            </tr>   
+                            </tr>  
+                            <tr key={cardItem.id + 1}>
+                                <td>Amazon Price:</td>
+                                <td><a href="https://amzn.to/39bwBk8">Check Price?</a></td>                                
+                            </tr>  
                             <tr key={cardItem.id +2 }>
                                 <td>Color</td>
                                 <td>{cardItem.color}</td>                                
