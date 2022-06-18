@@ -16,10 +16,6 @@ function InfoModal(props) {
 
     return (
       <>
-        <Button className="nextButton" onClick={handleShow} variant="outline-dark">
-          Card..
-        </Button>
-  
         <Modal size="lg" show={show} onHide={handleClose} centered fluid>
           <Modal.Header closeButton>
             <Modal.Title>{cardItem.name}</Modal.Title>
