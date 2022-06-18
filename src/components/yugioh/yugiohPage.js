@@ -96,7 +96,7 @@ class YugiohPage extends Component {
           Submit
         </Button>
       </Form>
-      <p>{CardRender(this.state.data)}</p>
+      <p> <CardRender cardDetails={this.state.data}/> </p>
       <p style={{marginBottom: "100px"}}></p>
       </div>
       );
