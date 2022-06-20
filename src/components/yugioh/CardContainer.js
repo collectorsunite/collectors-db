@@ -21,6 +21,11 @@ const CardRender = (props) => {
         setShowModal(handleShow)
     }
 
+    const defaultSortedBy = [{
+      dataField: "data.name",
+      order: "asc"  // or desc
+  }];
+
     const columns = [
         {
           dataField: "data.name",
@@ -215,6 +220,7 @@ const CardRender = (props) => {
         columns={columns}
         pagination={paginationFactory({ sizePerPage: 15, hideSizePerPage: true, nextPageText: '>', prePageText: '<' })}
         rowEvents={rowevents}
+        defaultSorted={defaultSortedBy}
       />
 
       {show ? <ModalContent /> : null}

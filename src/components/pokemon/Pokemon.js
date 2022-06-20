@@ -17,7 +17,7 @@ export default class Pokemon extends Component {
         <small className="h2title_heading">“Pikachu, I Choose You!”</small>
         <PokemonPage />
         </Col>
-        <Col>3</Col>
+        <Col></Col>
         </Row>
         </Container>
       </div>
